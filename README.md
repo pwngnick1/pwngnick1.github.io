@@ -1,4 +1,4 @@
 Nicholas Hoang, Biology Major
 I want to be happy and successful in the future
 I wrestle, cook, and workout at the gym
-Chemistry is my favorite subject
+Chemistry is my favorite subject.
