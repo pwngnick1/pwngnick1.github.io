@@ -1,0 +1,16 @@
+title: "Nick Hoang — Research Journal"
+description: "A modern Jekyll blog for research, projects, and writing."
+
+url: "https://pwngnick1.github.io"
+baseurl: ""
+
+markdown: kramdown
+permalink: /:categories/:year/:month/:day/:title/
+
+plugins:
+  - jekyll-feed
+  - jekyll-seo-tag
+
+author:
+  name: "Nick Hoang"
+  bio: "Student developer & curious researcher"
