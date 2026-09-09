@@ -1,10 +1,12 @@
 title: "Nick Hoang — Research Journal"
-description: "A modern Jekyll blog for research, projects, and writing."
+
+description: "Research, projects, and ideas from a student developer."
 
 url: "https://pwngnick1.github.io"
 baseurl: ""
 
 markdown: kramdown
+
 permalink: /:categories/:year/:month/:day/:title/
 
 plugins:
