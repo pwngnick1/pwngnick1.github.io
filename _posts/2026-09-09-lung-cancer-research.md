@@ -97,3 +97,6 @@ For example:
 ```text
 1 pack per day × 20 years
 = 20 pack-years
+
+plt.savefig("lung-cancer-survival.png", dpi=300, bbox_inches="tight")
+plt.show()
