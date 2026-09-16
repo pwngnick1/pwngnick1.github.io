@@ -42,7 +42,19 @@ Lung cancer occurs primarily among older adults. Most people diagnosed with lung
 
 Lung cancer is particularly serious because it can grow and spread before a person realizes that anything is wrong.
 
-However, survival is substantially better when lung cancer is detected while it is still localized.
+However, survival is substantially better when lung cancer is detected while it is still localized. <figure class="research-figure">
+
+  <img
+    src="{{ '/assets/images/lung-cancer-survival.png' | relative_url }}"
+    alt="Bar chart showing five-year relative survival for lung cancer by stage"
+  >
+
+  <figcaption>
+    Lung cancer 5-year relative survival by stage.
+    Chart created by Nick Hoang using Python and Matplotlib.
+  </figcaption>
+
+</figure>
 
 ---
 
