@@ -1,15 +1,8 @@
 <!DOCTYPE html>
-
 <html lang="en">
-
 <head>
-
   <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
   <title>
     {% if page.title %}
@@ -28,170 +21,77 @@
     rel="stylesheet"
     href="{{ '/assets/css/style.css' | relative_url }}"
   >
-
 </head>
-
 
 <body>
 
   {% include header.html %}
-
-
-  <main>
-
-    {{ content }}
-
-  </main>
-
-
-  {% include footer.html %}
-
-</body>
-
-<!DOCTYPE html>
-
-<html lang="en">
-
-<head>
-
-  <meta charset="UTF-8">
-
-  <meta
-    name="viewport"
-    content="width=device-width, initial-scale=1.0"
-  >
-
-  <title>
-    {{ page.title }} | {{ site.title }}
-  </title>
-
-  <meta
-    name="description"
-    content="{{ page.description }}"
-  >
-
-  <link
-    rel="stylesheet"
-    href="{{ '/assets/css/style.css' | relative_url }}"
-  >
-
-</head>
-
-
-<body>
-
-  {% include header.html %}
-
 
   <main class="article-page">
-
     <article class="article-container">
-
 
       <header class="article-header">
 
         {% if page.category %}
-
-        <span class="article-category">
-          {{ page.category }}
-        </span>
-
+          <span class="article-category">
+            {{ page.category }}
+          </span>
         {% endif %}
-
 
         <h1 class="article-title">
           {{ page.title }}
         </h1>
 
-
         {% if page.description %}
-
-        <p class="article-description">
-          {{ page.description }}
-        </p>
-
+          <p class="article-description">
+            {{ page.description }}
+          </p>
         {% endif %}
 
-
         <div class="article-meta">
-
           <span>
             {{ page.date | date: "%B %-d, %Y" }}
           </span>
 
-          <span class="meta-dot">
-            •
-          </span>
+          <span class="meta-dot">•</span>
 
           <span>
             {{ page.read_time | default: "5 min read" }}
           </span>
-
         </div>
 
       </header>
 
-
       <div class="article-layout">
 
-
         <aside class="article-sidebar">
-
           <div class="toc">
 
-            <p class="toc-title">
-              On this page
-            </p>
+            <p class="toc-title">On this page</p>
 
-            <a href="#frequency">
-              Frequency
-            </a>
-
-            <a href="#detection">
-              Detection
-            </a>
-
-            <a href="#risk-factors">
-              Risk factors
-            </a>
-
-            <a href="#types-stages">
-              Types & staging
-            </a>
-
-            <a href="#treatment">
-              Treatment
-            </a>
-
-            <a href="#survival">
-              Survival
-            </a>
-
-            <a href="#sources">
-              Sources
-            </a>
+            <a href="#founder">Founder</a>
+            <a href="#investment">Investment</a>
+            <a href="#revenue">Revenue</a>
+            <a href="#business">Business Focus</a>
+            <a href="#sequencing">Sequencing</a>
+            <a href="#business-model">Business Model</a>
+            <a href="#future">Future</a>
+            <a href="#reflection">Reflection</a>
+            <a href="#conclusion">Conclusion</a>
 
           </div>
-
         </aside>
 
-
         <div class="article-content">
-
           {{ content }}
-
         </div>
-
 
       </div>
 
     </article>
-
   </main>
-
 
   {% include footer.html %}
 
 </body>
-
 </html>
